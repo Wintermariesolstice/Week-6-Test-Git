@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/0ee8a9aeab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <br />
+
+      <h1>Weather Forecast</h1>
+      <br />
+      <div class="row">
+        <div class="card mx-auto mt-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="images/sunny.png"
+                class="img-fluid rounded-start"
+                alt="sunny"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" id="current-location">London</h5>
+               <p> Temp: <span class="card-text" id="current-temp">18</span> 
+                <span> <a href="" id="celcius"> °c </a> </span> / <span><a href="" id="fahrenheit"> °f </a> 
+                </span> <br /> <span id="description">sunny</span><br/> 
+                Humidity: <span id="humidity">23</span>% 
+                <span id="wind"></span>
+                  <div id="current-date"> Monday, 15 August 2021 20:00pm
+                  </div>
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <form>
+        <input type="text" class="formsearch" style="width: auto" placeholder="
+        Enter a city 🔍" id= "search-text-input" />
+        <button class="button" id="search-button">Search</button>
+        <button class="button" id = "location-button">
+          📍</button>
+      </form>
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="col">
+          <div class="card-group">
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+              <div class="card-header" id="tomorrow1">Sat 21 Aug</div>
+              <img
+                src="images/Cloud rain.png"
+                class="card-img-top"
+                alt="cloudRain"
+              />
+              <div class="card-body text-primary">
+                <h5 class="card-title">Rain</h5>
+                <p class="card-text">21°c / 14°c</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header" id="tomorrow2">Sun 22 Aug</div>
+            <img
+              src="images/Cloud rain.png"
+              class="card-img-top"
+              alt="cloudRain"
+            />
+            <div class="card-body text-success">
+              <h5 class="card-title">Showers</h5>
+              <p class="card-text">21°c / 14°c</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-warning mb-3" style="max-width: 18rem;">
+            <div class="card-header" id="tomorrow3">Mon 23 Aug</div>
+            <img
+              src="images/sunny cloud.png"
+              class="card-img-top"
+              alt="sunny"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cloudy</h5>
+              <p class="card-text">22°c / 13°c</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header" id="tomorrow4">Tue 24 Aug</div>
+            <img
+              src="images/sunny cloud.png"
+              class="card-img-top"
+              alt="sunny"
+            />
+            <div class="card-body text-danger">
+              <h5 class="card-title">Cloudy</h5>
+              <p class="card-text">23°c / 13°c</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header" id="tomorrow5">Wed 25 Aug</div>
+            <img
+              src="images/sunny cloud.png"
+              class="card-img-top"
+              alt="sunny"
+            />
+            <div class="card-body text-dark">
+              <h5 class="card-title">Cloudy</h5>
+              <p class="card-text">22°c / 13°c</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
