@@ -10,7 +10,7 @@ body {
   border-radius: 40px;
   border-top: 100px;
   width: 65%;
-  margin: 30px auto;
+  margin: 50px auto;
   background: white;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 .card-body {
   background-color: white;
-  color: gray;
+  color: darkslategrey;
   border: 1px solid gray;
   border-radius: 85px;
 }
@@ -43,7 +43,12 @@ body {
 h1 {
   text-align: center;
 }
-.card-body.active {
-  color: rgb(33, 33, 33);
+.active {
+  color: darkslategrey;
   cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
 }
