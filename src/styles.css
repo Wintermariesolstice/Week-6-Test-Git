@@ -10,7 +10,7 @@ body {
   border-radius: 40px;
   border-top: 100px;
   width: 65%;
-  margin: auto;
+  margin: 30px auto;
   background: white;
 }
 
@@ -40,4 +40,10 @@ body {
 #description {
   text-transform: capitalize;
 }
-h1 {text-align:center;}
+h1 {
+  text-align: center;
+}
+.card-body.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
