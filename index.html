@@ -25,21 +25,21 @@
       <h1>Weather Forecast</h1>
       <br />
       <div class="row">
-       <div class="card mx-auto mt-3" style="max-width: 540px;">
+       <div class="card mx-auto mt-3 border-0" style="max-width: 540px;">
            <div class="row g-0">
             <div class="col-md-4">
-              <img
+              <img class="mainIcon"
                 src=""
         
-                alt="" id="icon" "
+                alt="" id="icon"
               />
             </div>
             <div class="col-md-8">
              <div class="card-body">
                 <h5 class="card-title" id="current-location">London</h5>
                <p> Temp: <span class="card-text" id="current-temp">18</span> 
-                <span> <a href="" id="celsius" class="active"> °c </a> </span> / 
-                <span><a href="" id="fahrenheit" > °f </a> 
+                <span> <a href="" id="celsius" class="active"> °C </a> </span>  
+                <span><a href="" id="fahrenheit" ></a> 
                 </span> <br /> <span id="description">sunny</span><br/> 
                 Humidity: <span id="humidity">23</span>% <br/>
                 Wind:<span id="wind"> 10</span>km/h
@@ -56,11 +56,10 @@
       </div>
       <br />
       <form>
-        <input type="text" class="formsearch" style="width: auto" placeholder="
-        Enter a city 🔍" id= "search-text-input" />
+        <input type="text" class="formsearch" style="width: 300px" placeholder="
+        🔍  Enter a city.... " id= "search-text-input" />    
         <button class="button" id="search-button">Search</button>
-        <button class="button" id = "location-button">
-          📍</button>
+         
       </form>
       <br />
       <br />

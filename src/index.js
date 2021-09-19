@@ -80,12 +80,12 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row justify-content-md-center">`;
   forecastDaily.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 5) {
       forecastHTML =
         forecastHTML +
         `
      <div class="col-2">
-       <div class="card">
+       <div class="card border-0">
          <div class="card-body">
           <p class="card-text"></p>
           <h6>${formatDay(forecastDay.dt)}</h6>
@@ -162,10 +162,6 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", changeC);
 
 // Geolocation
-
-let locationButton = document.querySelector("#location-button");
-
-locationButton.addEventListener("click", searchCity);
 
 let celsiusTemp = null;
 
